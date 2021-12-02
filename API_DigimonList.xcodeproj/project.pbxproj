@@ -13,6 +13,9 @@
 		9037892D2757EE6000F81DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9037892B2757EE6000F81DF3 /* Main.storyboard */; };
 		9037892F2757EE6200F81DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9037892E2757EE6200F81DF3 /* Assets.xcassets */; };
 		903789322757EE6200F81DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903789302757EE6200F81DF3 /* LaunchScreen.storyboard */; };
+		9037893A2757EE7100F81DF3 /* DigimonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903789392757EE7100F81DF3 /* DigimonModel.swift */; };
+		9037893C2757EE8100F81DF3 /* DigimonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037893B2757EE8100F81DF3 /* DigimonManager.swift */; };
+		903789412758094800F81DF3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903789402758094800F81DF3 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9037892E2757EE6200F81DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903789312757EE6200F81DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903789332757EE6200F81DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903789392757EE7100F81DF3 /* DigimonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonModel.swift; sourceTree = "<group>"; };
+		9037893B2757EE8100F81DF3 /* DigimonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonManager.swift; sourceTree = "<group>"; };
+		903789402758094800F81DF3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		903789242757EE6000F81DF3 /* API_DigimonList */ = {
 			isa = PBXGroup;
 			children = (
+				9037893F2757EEEE00F81DF3 /* View */,
+				9037893E2757EEDF00F81DF3 /* View Model */,
+				9037893D2757EEB200F81DF3 /* Model */,
 				903789252757EE6000F81DF3 /* AppDelegate.swift */,
 				903789272757EE6000F81DF3 /* SceneDelegate.swift */,
-				903789292757EE6000F81DF3 /* ViewController.swift */,
-				9037892B2757EE6000F81DF3 /* Main.storyboard */,
 				9037892E2757EE6200F81DF3 /* Assets.xcassets */,
+				9037892B2757EE6000F81DF3 /* Main.storyboard */,
 				903789302757EE6200F81DF3 /* LaunchScreen.storyboard */,
 				903789332757EE6200F81DF3 /* Info.plist */,
 			);
 			path = API_DigimonList;
+			sourceTree = "<group>";
+		};
+		9037893D2757EEB200F81DF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				903789392757EE7100F81DF3 /* DigimonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9037893E2757EEDF00F81DF3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				9037893B2757EE8100F81DF3 /* DigimonManager.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		9037893F2757EEEE00F81DF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				903789292757EE6000F81DF3 /* ViewController.swift */,
+				903789402758094800F81DF3 /* CollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9037892A2757EE6000F81DF3 /* ViewController.swift in Sources */,
+				9037893A2757EE7100F81DF3 /* DigimonModel.swift in Sources */,
+				903789412758094800F81DF3 /* CollectionViewCell.swift in Sources */,
+				9037893C2757EE8100F81DF3 /* DigimonManager.swift in Sources */,
 				903789262757EE6000F81DF3 /* AppDelegate.swift in Sources */,
 				903789282757EE6000F81DF3 /* SceneDelegate.swift in Sources */,
 			);
